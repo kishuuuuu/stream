@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Stream</title>
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <style>
+      /* Remove default margin/padding */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: black;
+        overflow: hidden;
+      }
+
+      /* Hide status and text */
+      .status,
+      .container h1 {
+        display: none;
+      }
+
+      /* Fullscreen video */
+      video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Watching Stream</h1>
+      <div id="status" class="status">Waiting for broadcast...</div>
+      <!-- Add autoplay and muted here -->
+      <video id="video" autoplay playsinline muted></video>
+    </div>
+    <script src="/js/viewer.js"></script>
+  </body>
+</html>
