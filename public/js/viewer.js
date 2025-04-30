@@ -16,7 +16,7 @@ class Viewer {
   }
 
   connectWebSocket() {
-    this.ws = new WebSocket(`ws://${window.location.host}`);
+    this.ws = new WebSocket(`wss://${window.location.host}`);
 
     this.ws.onopen = () => {
       console.log("WebSocket connected, sending viewer registration");

@@ -41,7 +41,7 @@ class Broadcaster {
       this.updateStatus("Connecting to server...", "waiting");
 
       // Connect to signaling server
-      this.ws = new WebSocket(`ws://${window.location.host}`);
+      this.ws = new WebSocket(`wss://${window.location.host}`);
 
       this.ws.onopen = () => {
         this.ws.send(JSON.stringify({ type: "broadcaster" }));
