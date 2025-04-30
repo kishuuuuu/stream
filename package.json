@@ -21,5 +21,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishuuuuu/stream.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kishuuuuu/stream/issues"
+  },
+  "homepage": "https://github.com/kishuuuuu/stream#readme"
 }

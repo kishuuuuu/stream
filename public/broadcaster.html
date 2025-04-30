@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Broadcaster - Screen Share</title>
+    <style>
+      video {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+      }
+      body {
+        margin: 0;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Broadcaster (Screen Sharing)</h2>
+    <video id="localVideo" autoplay muted playsinline></video>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      // Identify this is a broadcaster screen share
+      localStorage.setItem("broadcasterType", "screen");
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
